@@ -3,459 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dentist</title>
+    <title>DENTIST</title>
+    <link rel="stylesheet" href="./index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><span>Dentist</span></a>
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarHomeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Home
+  <nav id="navigation" class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <div class="nav d-lg-flex ">
+      <a class="navbar-brand" href="#"><span>Dentist</span></a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="action-buttons d-none d-lg-flex">
+          <a href="tel:+11234567890" class="phone-btn">
+            <i class="fas fa-phone"></i> +91 98751 29913
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarHomeDropdown">
-            <li><a class="dropdown-item" href="./index.html">Home-1</a></li>
-            <li><a class="dropdown-item" href="./home2.html">Home-2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarHomeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarHomeDropdown">
-            <li><a class="dropdown-item" href="./Services1.html">Services-1</a></li>
-            <li><a class="dropdown-item" href="./Services2.html">Services-2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarHomeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Team
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarHomeDropdown">
-            <li><a class="dropdown-item" href="./Team1.html">Team-1</a></li>
-            <li><a class="dropdown-item" href="./Team2.html">Team-2</a></li>
-          </ul>
-        </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarHomeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pricing
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarHomeDropdown">
-            <li><a class="dropdown-item" href="./Pricing1.html">Pricing-1</a></li>
-            <li><a class="dropdown-item" href="./Pricing2.html">Pricing-2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-      </ul>
-      <div class="action-buttons d-none d-lg-flex ms-3">
-        <a href="tel:+919875129913" class="phone-btn">
-          <i class="fas fa-phone"></i> +91 98751 29913
-        </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="swiper mySwiper" id="home">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image: url('./img1.jpg');">
+      <div class="slide-content">
+        <h1>The art of creating smiles</h1>
+        <p>The next big thing is the one that makes the last big thing usable.</p>
+        <a href="#">Make an Appointment</a>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('./img2.jpg');">
+      <div class="slide-content">
+        <h1>Your smile, our passion</h1>
+        <p>Modern technology with a personal touch. Let's brighten your smile.</p>
+        <a href="#">Book Now</a>
       </div>
     </div>
   </div>
-</nav>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
 
-    <button onclick="scrollToTop()" id="backToTop">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
- <section class="hero">
-    <div class="hero-text">
-      <h2>Welcome to Dentist</h2>
-      <h1>Transforming Smiles<br>With Precision And<br>Gentle Touch</h1>
-      <p>We offer high-quality dental care tailored for the whole family. From routine checkups to advanced treatments, our compassionate team ensures your smile stays healthy and confident.</p>
-       <a href="#" class="book-outline-btn">Book Appointment</a>
-      <div class="ratings">
-        Google Rating <strong>5.0</strong>
-        <span>★ ★ ★ ★ ★</span> Based on 23k Reviews
+  <section class="section" id="about">
+    <div class="sub-heading">WHY CHOOSE US?</div>
+    <h1 class="main-heading">
+      We treat your teeth,<br />
+      how we'd treat our<br />
+      own.
+    </h1>
+    <p class="paragraph">
+      Cepteur sint occaecat cupidatat proident, taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart and feel the charm.
+    </p>
+    <div class="badge-box">
+      <div class="badge-icon"><img src="./approve.png"></div>
+      <div>
+        Voted Best Dentist in Santa Rosa<br />
+        by reader of Magazine
       </div>
     </div>
+     <div class="main">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8 col-md-12">
+          <div class="main-image">
+            <div class="img-hover-wrap">
+              <img src="./img3.jpg" alt="Dentist with child" class="img-fluid w-100">
+              <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
 
-    <div class="hero-image">
-      <img src="https://madebydesignesia.com/themes/dentia/images/misc/c1.webp" alt="Dentist">
+        <div class="col-lg-4 col-md-12">
+          <div class="d-flex flex-column gap-4">
+            <div class="side-image">
+              <div class="img-hover-wrap">
+                <img src="./img4.jpg" alt="Male Dentist" class="img-fluid w-100">
+                <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+            <div class="side-image">
+              <div class="img-hover-wrap">
+                <img src="./img1.jpg" alt="Female Dentist" class="img-fluid w-100">
+                <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <h1 class="se">Our Service</h1>
-  <div class="dental-card-wrapper">
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img1.png" alt="General Dental Care" />
-          <h3>General Dental Care</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Keep your teeth healthy!</h4>
-          <a href="#">Read More →</a>
-        </div>
+    <section class="py-5" id="services">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <small class="text-primary text-uppercase fw-bold">Featured Services</small>
+        <h2 class="mt-2">A Perfect Smile to begin with</h2>
+        <p class="mt-3">Cepteur sint occaecat cupidatat proident, taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart and feel the charm.</p>
       </div>
-    </div>
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img2.png" alt="Dental Implants" />
-          <h3>Dental Implants</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Restore your smile!</h4>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-    </div>
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img3.png" alt="General Dental Care" />
-          <h3>cosmetic dentistry</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Keep your teeth healthy!</h4>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-    </div>
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img4.png" alt="Dental Implants" />
-          <h3>teeth whitening</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Restore your smile!</h4>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-    </div>
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img5.png" alt="General Dental Care" />
-          <h3>pediatric dental care</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Keep your teeth healthy!</h4>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-    </div>
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img6.png" alt="Dental Implants" />
-          <h3>advanced oral care</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Restore your smile!</h4>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-    </div>
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img7.png" alt="General Dental Care" />
-          <h3>comfort dentistry</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Keep your teeth healthy!</h4>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-    </div>
-    <div class="dental-card">
-      <div class="dental-card-inner">
-        <div class="dental-card-front">
-          <img src="./img8.png" alt="Dental Implants" />
-          <h3>smile renewal</h3>
-          <p>We are excited to meet you and provide the best dental care for your family.</p>
-        </div>
-        <div class="dental-card-back">
-          <h4>Restore your smile!</h4>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-    </div>
-  </div> 
 
-  <div class="team-section">
-    <h3>Meet Our Dental Team</h3>
-    <h1>Committed to Your Smile</h1>
-    <p>Our experienced dental team is here to make every visit positive and personalized.<br>With gentle hands and caring hearts.</p>
-  </div>
+      <div class="row">
+        <div class="col-md-4 service-box">
+          <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/services/1.jpg" alt="Teeth Straightening" class="service-img">
+          <div class="img-overlay"><i class="fas fa-search"></i></div>
+          <h5 class="mt-3">Teeth Straightening</h5>
+          <p>Achieve a confident, beautifully aligned smile with our expert teeth straightening solutions. Whether you're dealing with crooked teeth, gaps, or bite issues, we offer...</p>
+        </div>
 
-  <div class="slider-wrapper">
-    <div class="swiper">
+        <div class="col-md-4 service-box">
+          <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/services/2.jpg" alt="Invisalign For All" class="service-img">
+          <div class="img-overlay"><i class="fas fa-search"></i></div>
+          <h5 class="mt-3">Invisalign For All</h5>
+          <p>A straighter smile is now easier and more discreet than ever with Invisalign — the clear alternative to traditional braces.</p>
+        </div>
+
+        <div class="col-md-4 service-box">
+          <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/services/3.jpg" alt="Teeth Whitening" class="service-img">
+          <div class="img-overlay"><i class="fas fa-search"></i></div>
+          <h5 class="mt-3">Teeth Whitening</h5>
+          <p>Brighten your smile with our safe and effective teeth whitening treatments! Over time, teeth can become stained from coffee, tea, wine, smoking, or simply aging.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 service-box">
+          <img src="./img1.jpg" alt="Dental Checkup" class="service-img">
+          <div class="img-overlay"><i class="fas fa-search"></i></div>
+          <h5 class="mt-3">Dental Checkup</h5>
+          <p>Routine dental checkups and cleanings are essential for maintaining healthy teeth and gums. Our experienced dentists perform thorough...</p>
+        </div>
+         <div class="col-md-4 service-box">
+          <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/services/4.jpg" alt="Dental Implants" class="service-img">
+          <div class="img-overlay"><i class="fas fa-search"></i></div>
+          <h5 class="mt-3">Dental Implants</h5>
+          <p>Regain your smile and confidence with our advanced dental implants. Designed to look, feel, and function like natural teeth...</p>
+        </div>
+          <div class="col-md-4 service-box">
+          <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/services/5.jpg" alt="Advanced Dental Care" class="service-img">
+          <div class="img-overlay"><i class="fas fa-search"></i></div>
+          <h5 class="mt-3">Advanced Dental Care</h5>
+          <p>We combine advanced dental technology with compassionate care to deliver treatments that are faster, safer...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section py-5 bg-light" id="team">
+  <div class="container text-center">
+    <h6 class="text-primary text-uppercase">Who We Are</h6>
+    <h2 class="fw-bold display-5">Meet Our Top Experts</h2>
+    <p class="text-muted mb-4">Alone we can do so little; together we can do so much.</p>
+
+    <div class="swiper teamSwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-1.jpg" alt="Dr. Sarah Bennett">
-          <div class="team-info">
-            <h3>Dr. Kaushal Kakkad</h3>
-            <p>Lead Dentist</p>
+          <div class="team-card">
+            <div class="img">
+              <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/team/1.jpg" alt="John">
+                <div class="social-networks">
+          <a href="#"><i class="fab fa-facebook"></i>     </a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+            </div>
+            <h5 class="mt-3 fw-bold">John</h5>
+            <p class="text-muted mb-0">Dental Doctor</p>
           </div>
         </div>
         <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-2.jpg" alt="Dr. Maya Lin">
-          <div class="team-info">
-            <h3>Dr Navnit K.Thummar</h3>
-            <p>Cosmetic Dentist</p>
+          <div class="team-card">
+            <div class="img">
+              <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/team/2.jpg" alt="John">
+                <div class="social-networks">
+            <a href="#"><i class="fab fa-facebook"></i>     </a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+              <h5 class="mt-3 fw-bold">Abigail</h5>
+            <p class="text-muted mb-0">Dental Doctor</p>
           </div>
         </div>
         <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-3.jpg" alt="Dr. Michael Reyes">
-          <div class="team-info">
-            <h3>Dr. Mayank U Patel</h3>
-            <p>Pediatric Specialist</p>
+          <div class="team-card">
+            <div class="img">
+              <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/team/3.jpg" alt="John">
+                <div class="social-networks">
+          <a href="#"><i class="fab fa-facebook"></i>     </a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+            </div>
+             <h5 class="mt-3 fw-bold">Anderson</h5>
+            <p class="text-muted mb-0">Dental Doctor</p>
           </div>
         </div>
         <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-4.jpg" alt="Dr. James Carter">
-          <div class="team-info">
-            <h3>Dr. Laura Davis</h3>
-            <p>Dentist</p>
+          <div class="team-card">
+            <div class="img">
+              <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/team/4.jpg" alt="Abigail">
+                <div class="social-networks">
+          <a href="#"><i class="fab fa-facebook"></i>     </a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+            </div>
+            <h5 class="mt-3 fw-bold">Donna</h5>
+            <p class="text-muted mb-0">Dental Doctor</p>
           </div>
         </div>
         <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-5.jpg" alt="Dr. James Carter">
-          <div class="team-info">
-            <h3>Dr. John Jones</h3>
-            <p>Dentist</p>
+          <div class="team-card">
+            <div class="img">
+              <img src="https://alearslan.com/this-one-one-page-responsive-website-template/one-page/dentist-website-template/assets/imgs/team/5.jpg" alt="Anderson">
+                <div class="social-networks">
+          <a href="#"><i class="fab fa-facebook"></i>     </a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+            </div>
+            <h5 class="mt-3 fw-bold">Bailey</h5>
+            <p class="text-muted mb-0">Dental Doctor</p>
           </div>
         </div>
-        <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-6.jpg" alt="Dr. James Carter">
-          <div class="team-info">
-            <h3>Dr. Natalie Taylor</h3>
-            <p>Dentist</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-7.jpg" alt="Dr. James Carter">
-          <div class="team-info">
-            <h3>Dr. William Garcia</h3>
-            <p>Senior Dentist</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="team-img" src="https://demo.awaikenthemes.com/primecare/wp-content/uploads/2024/09/doctor-8.jpg" alt="Dr. James Carter">
-          <div class="team-info">
-            <h3>Dr. Daniel Wilson</h3>
-            <p>Senior Dentist</p>
-          </div>
-        </div>
-
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
 
-  <section class="counter-section">
-  <div class="counter-box">
-    <div class="counter" data-target="10000" data-start="1000" data-step="40">1000</div>
-    <div class="label">Happy Patients</div>
-  </div>
-  <div class="counter-box">
-    <div class="counter" data-target="2500" data-start="100" data-step="10">0</div>
-    <div class="label">Teeth Whitened</div>
-  </div>
-  <div class="counter-box">
-    <div class="counter" data-target="800" data-start="25" data-step="10">0</div>
-    <div class="label">Dental Implants</div>
-  </div>
-  <div class="counter-box">
-    <div class="counter" data-target="15" data-start="0" data-step="1">0</div>
-    <div class="label">Years of Experience</div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div>
 </section>
 
-<div class="img">
-  <div class="video-wrapper">
-     <img src="./service2.jpg" alt="Video Thumbnail" />
-   </div>
-</div>
-
-<section class="custom-testimonial-wrapper">
-    <div class="custom-testimonial-header">
-      <h5>+ Testimonial</h5>
-      <h2><span>What our</span> patients Say</h2>
-      <p>We are committed to sustainability. Eco-friendly initiatives.</p>
-    </div>
-
-    <div class="custom-swiper-container swiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide custom-swiper-slide">
-          <p class="custom-quote">
-            I want to say thank you to my doctor Steve! Vivamus sagittis massa vitae bibendum rhoncus. Duis cursus. Thank you for helping me overcome my fear of the dentist!
-          </p>
-          <div class="custom-author">
-            <img src="./patients2.jpg" alt="Maria Gomez">
-            <div class="custom-author-info">
-              <h4>Maria Gomez</h4>
-              <span>Designer</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide custom-swiper-slide">
-          <p class="custom-quote">
-            Excellent service and care. The staff is knowledgeable and always willing to answer questions. From the moment I walked in, I felt welcomed and cared for.
-          </p>
-          <div class="custom-author">
-            <img src="./patients2.jpg" alt="Daniel Park">
-            <div class="custom-author-info">
-              <h4>Daniel Park</h4>
-              <span>Marketing Lead</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="swiper-button-prev custom-nav-btn"></div>
-      <div class="swiper-button-next custom-nav-btn"></div>
-    </div>
-  </section>
-
-    <footer class="footer">
+<section class="pricing" id="pricing">
   <div class="container">
-    <div class="row gy-4">
-      <div class="col-md-3">
-        <div class="logo-text mb-2">
-          <i class="fa-solid fa-tooth"></i> Dentist
+    <div class="row">
+      <div class="col-12 text-center">
+        <h6 style="color: #007bff;">Transparent Pricing</h6>
+        <h1 style="font-size: 50px;">Membership Benefits</h1>
+        <h5 class="pt-2">Choose the plan that’s right for your company.</h5>
+      </div>
+    </div>
+    <div class="row pt-5 g-3 g-lg-5">
+      <div class="col-md-4 text-start">
+       <div class="block">
+          <div class="herotext secondary-bg p-4">
+            <h4>Basic Cleaning</h4>
+            <h2>₹999</h2>
+          </div>
+          <ul class="pt-4">
+            <li><i class="fa-solid fa-check"></i> Dental Checkup</li>
+            <li><i class="fa-solid fa-check"></i> Basic Cleaning</li>
+            <li><i class="fa-solid fa-check"></i> Polishing</li>
+            <li><i class="fa-solid fa-check"></i> Consultation</li>
+          </ul>
+          <div><a href="#" class="btn btn-secondary w-100">CHOOSE PLAN</a></div>
         </div>
-        <p>We're dedicated to providing high-quality, compassionate dental care for patients of all ages from preventive care.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="col-md-4 text-start">
+        <div class="block">
+          <div class="herotext primary-bg p-4 best">
+            <h4>Teeth Whitening</h4>
+            <h2>₹1499</h2>
+          </div>
+          <ul class="pt-4">
+            <li><i class="fa-solid fa-check"></i> Whitening Gel</li>
+            <li><i class="fa-solid fa-check"></i> Laser Procedure</li>
+            <li><i class="fa-solid fa-check"></i> 1 Follow-up Visit</li>
+            <li><i class="fa-solid fa-check"></i> Consultation</li>
+          </ul>
+          <div><a href="#" class="btn btn-primary w-100">CHOOSE PLAN</a></div>
         </div>
       </div>
-
-      <div class="col-md-3">
-        <h6 class="fw-bold">Quick Links</h6>
-        <ul>
-          <li><a href="#">Home Page</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-3">
-        <h6 class="fw-bold">Our Services</h6>
-        <ul>
-          <li><a href="#">General Dental</a></li>
-          <li><a href="#">Cosmetic Dental</a></li>
-          <li><a href="#">Whitening Care</a></li>
-          <li><a href="#">Dental Implants</a></li>
-          <li><a href="#">Dental Care</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="col-md-3">
-        <h6 class="fw-bold">Contact Us</h6>
-        <ul>
-          <li><i class="fa-solid fa-phone"></i> +91 98751 29913</li>
-          <li><i class="fa-solid fa-location-dot"></i> Doctor House, F-41/45, First Floor</li>
-          <li><i class="fa-solid fa-envelope"></i> contact@Dentist.com</li>
-          <li><i class="fa-solid fa-globe"></i> Dentist.com</li>
-        </ul>
+      <div class="col-md-4 text-start">
+        <div class="block">
+          <div class="herotext secondary-bg p-4">
+            <h4>Braces Treatment</h4>
+            <h2>₹9999</h2>
+          </div>
+          <ul class="pt-4">
+            <li><i class="fa-solid fa-check"></i>Consultation</li>
+            <li><i class="fa-solid fa-check"></i> X-rays & Impressions</li>
+            <li><i class="fa-solid fa-check"></i> Customized Braces</li>
+            <li><i class="fa-solid fa-check"></i> Monthly Follow-ups</li>
+          </ul>
+          <div><a href="#" class="btn btn-secondary w-100">CHOOSE PLAN</a></div>
+        </div>
       </div>
     </div>
   </div>
-</footer>
+</section>
 
+<section class="cn" id="contact">
+      <div class="Contact">
+    <h5>JOIN US</h5>
+    <h1>
+      Unlock Your <br />
+      <span>Dream Smile Today</span>
+    </h1>
+    <div class="Contact-buttons">
+      <a href="#" class="btn-primary">BOOK NOW</a>
+      <a href="#" class="btn-outline">OUR SERVICES</a>
+    </div>
+      </div>
+        <div class="contact-section">
+    <div class="contact-info-box">
+      <div class="section-title">Talk or Meet with Us</div>
+      <div class="contact-item">
+       <i class="fa-solid fa-phone"></i>
+        <div class="contact-details">
+          <h4>Contact Phone</h4>
+          <p>+91 98751 29913</p>
+        </div>
+      </div>
+      <div class="contact-item">
+       <i class="fa-solid fa-envelope"></i>
+        <div class="contact-details">
+          <h4>Contact Mail</h4>
+          <p>info.Dentist@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+       <i class="fa-solid fa-location-dot"></i>
+        <div class="contact-details">
+          <h4>Contact Location</h4>
+          <p> Doctor House, F-41/45, First Floor, Varachha Main Rd, Hirabaugh, Surat, Gujarat 395006</p>
+          <p>Tapibaug, Shopping center part-2, 2nd Floor, nr. Han Society, Varachha, Surat, Gujarat 395006</p>
+        </div>
+      </div>
+      <div class="contact-item">
+      <i class="fa-solid fa-clock"></i>
+        <div class="contact-details">
+          <h4>Office Time</h4>
+          <p>Mon-Fri: 9.00 - 7.00</p>
+          <p>Sat-Sun: 9.00 - 2.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-box">
+      <h2>Get In Touch</h2>
+      <form  method="post">
+        <input type="text" name="username" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i> &nbsp; Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+ 
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <p>We provide awesome services to help you grow your business.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li class="links">Home</li>
+          <li class="links">Services</li>
+          <li class="links">About</li>
+          <li class="links">Contact</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: info.Dentist@gmail.com</p>
+        <p>Phone: +91 98751 29913</p>
+        <p>Address: Doctor House, F-41/45, First Floor, "Sarthi" Complex, Varachha Main Rd, Hirabaugh, Surat, Gujarat 395006</p>
+      </div>
+    </div>
+   <div class="footer-bottom">
+  <div class="social-icons">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const backToTopButton = document.getElementById("backToTop");
-window.onscroll = function () {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
-  }
-};
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-    new Swiper('.swiper', {
-      slidesPerView: 4,
-      spaceBetween: 30,
+  </div>
+</footer>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
       loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
       },
-      autoplay: false,
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        1280: {
-          slidesPerView: 4,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      }
+    });
+
+    const sections = document.querySelectorAll("section[id], .swiper");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 150;
+        const sectionId = section.getAttribute("id");
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${sectionId}`) {
+              link.classList.add("active");
+            }
+          });
         }
-      }
+      });
     });
-      const counters = document.querySelectorAll('.counter');
-
-  counters.forEach(counter => {
-    const target = +counter.getAttribute('data-target');
-    let count = +counter.getAttribute('data-start') || 0;
-    const step = +counter.getAttribute('data-step') || 1;
-
-    const duration = 1000;
-    const stepsCount = Math.ceil((target - count) / step);
-    const stepTime = Math.max(Math.floor(duration / stepsCount), 10);
-
-    const update = setInterval(() => {
-      count += step;
-      if (count >= target) {
-        clearInterval(update);
-        counter.textContent = target + '+';
-        counter.classList.add('rotate'); // add rotate after done
-      } else {
-        counter.textContent = count + '+';
-      }
-    }, stepTime);
+     const swi = new Swiper('.teamSwiper', {
+    loop: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 }
+    }
   });
-  new Swiper('.custom-swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      loop: true,
-    });
   </script>
 </body>
 </html>
